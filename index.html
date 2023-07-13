@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Food Menu</title>
+	
+	<!-- Java Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.2.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+   <!--  boostrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- boostrap icon -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css"> 
+
+    <!-- css File -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+ <header class="main_header">
+        <div class="container">
+            <div class="flex head">
+                <div class="logo">
+                    <img src="images/logo1.png" alt="">
+                </div>
+                <div>
+                <ul class="main_menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">More</a>
+                    <ul class="sub_menu">
+                        <li><a href="">Our Gallery</a></li>
+                        <li><a href="">Our Chefs</a></li>
+                        <li><a href="">Our History</a></li>
+                        <li><a href="">Reservation </a></li>
+                        <li><a href="">FAQ </a></li>
+                        <li><a href="">Contact</a></li>
+
+                    </ul>
+                    </li>
+                </ul>
+                </div>
+                <div>
+                	<button class="btn_signin"><i class="fa-regular fa-user icon"></i>Sign In</button>
+                	<button class="btn_cart"><i class="fa-solid fa-cart-shopping icon"></i>Cart</button>
+                	<!-- <button class="btn_cartvalue">0</button> -->
+                    <input type="button" onclick="" value="0" name="" id="in_cart" class="btn_cartvalue">
+                </div>
+            </div>
+        </div>
+    </header>
+<!--  ============================== Slider ===================================== -->
+    <section class="slider_sec">
+            <div class="slide">
+                    <img src="images/s3_7.png" class="img5 _animation">
+                    <img src="images/s3_3.png" class="img5 _animation">
+                    <img src="images/s3_4.png" class="img5 _animation">
+                    <img src="images/s3_5.png" class="img5 _animation">
+                    <img src="images/s3_1.png" class="img5 _animation">
+                    <img src="images/s3_2.png" class="img5 _animation">
+                    <img src="images/s3_6.png" class="img5 _animation">
+                    <img src="images/s3_8.png" class="img5 _animation">
+                    <img src="images/s3_10.jpg" class="img5 _animation">
+                    <img src="images/s3_9.jpg" class="img5 _animation">
+            </div>
+            <div class="dot_div" style="text-align:center">
+                    <span class="dot" onclick="dot(0)"></span> 
+                    <span class="dot" onclick="dot(1)"></span> 
+                    <span class="dot" onclick="dot(2)"></span> 
+                    <span class="dot" onclick="dot(3)"></span> 
+                    <span class="dot" onclick="dot(4)"></span>
+                    <span class="dot" onclick="dot(5)"></span>
+                    <span class="dot" onclick="dot(6)"></span>
+                    <span class="dot" onclick="dot(7)"></span>
+                    <span class="dot" onclick="dot(8)"></span>
+                    <span class="dot" onclick="dot(9)"></span>
+            </div>
+       
+    </section>
+
+<!-- ========================================== Menu Section1 ====================================  -->
+
+    <section class="menu_sec">
+        <div class="container">
+            <div class="menu">
+                <div class="sec_title flex">
+                        <img src="images/left.png" alt="" class="title_image_1">
+                        <h3 class="t1">Best Food menu</h3>
+                        <img src="images/right.png" alt="" class="title_image_1"><br>
+                </div>
+                <div class="sub_title">
+                 <p>Choose Your Best Menus</p>
+                </div>
+           </div>
+           <div class="row">
+            <div class="col-6 mt-4">
+                <img src="images/asset 3.jpeg" alt="" class="img_left img-fluid">
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-4 img_check">
+                        <img src="images/asset 4.png" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8 mt-4">
+                        <div class="menu_item">
+                            
+                            <h3 class="item-title"><a href="#">Hamburger ...............................</a><input type="button" id="b1" class="btn_1" name=" " value="₹99"></h3>
+                            <p>Roasted langoustine, consommé</p>
+                            <input type="checkbox" id="c1" class="check_1" name="ckb" onclick="check()" value=99>
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 mt-3">
+                         <img src="images/asset 5.png" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8 ">
+                        <div class="menu_item mt-4">
+                            <h3 class="item-title"><a href="#">Pizza ..........................................₹299</a></h3>
+                            <p>Roasted langoustine, consommé</p>
+                            <input type="checkbox" id="c2" class="check_1" name="ckb" onclick="check()" value=299>
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                         <img src="images/asset 6.png" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8">
+                        <div class="menu_item mt-4 ">
+                            <h3 class="item-title"><a href="#">Baked Chicken Wings ..........₹199</a></h3>
+                            <p>Roasted langoustine, consommé</p>
+                          <input type="checkbox" id="c3" class="check_1" name="ckb"  onclick="check()" value=199>
+
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                         <img src="images/asset 7.png" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8 ">
+                        <div class="menu_item mt-4">
+                            <h3 class="item-title"><a href="#">Seafood Pizza............................₹499</a></h3>
+                            <p>Roasted langoustine, consommé</p>
+                            <input type="checkbox" id="c4" class="check_1" name="ckb"  onclick="check()" value=499>
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 ">
+                         <img src="images/asset 8.png" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8">
+                        <div class="menu_item mt-4">
+                            <h3 class="item-title"><a href="#">Pasta Fettuccine.......................₹199</a></h3>
+                            <p>Roasted langoustine, consommé</p>
+                           <input type="checkbox" id="c5" class="check_1" name="ckb" onclick="check()" value=199>
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+<!-- ========================================== Menu Section2 ====================================  -->
+
+    <section class="menu_sec">
+        <div class="container">
+            
+           <div class="row">
+            <div class="col-6 mt-4 order-last">
+                <img src="images/asset 12.jpeg" alt="" class="img_left img-fluid">
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/asset 9.png" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8 mt-3">
+                        <div class="menu_item mt-4">
+                            <h3 class="item-title"><a href="#">Submarine Sandwich ............₹99</a></h3>
+                            <p>Roasted langoustine, consommé</p>
+                            <input type="checkbox" id="c6" class="check_1" name="ckb"  onclick="check() " value=99>
+
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 mt-3">
+                         <img src="images/asset 10.png" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8 ">
+                        <div class="menu_item mt-4">
+                            <h3 class="item-title"><a href="#">Chicken Biryani .....................₹199</a></h3>
+                            <p>Roasted langoustine, consommé</p>
+                            <input type="checkbox" id="c7" class="check_1" name="ckb"  onclick="check()" value=199>
+
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                         <img src="images/asset 11.png" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8">
+                        <div class="menu_item mt-4 ">
+                            <h3 class="item-title"><a href="#">Shawarma-roll .........................₹199</a></h3>
+                            <p>Roasted langoustine, consommé</p>
+                           <input type="checkbox" id="c8" class="check_1" name="ckb"  onclick="check()" value=199>
+
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 mb-4">
+                         <img src="images/asset 12_1.jpg" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8 ">
+                        <div class="menu_item mt-4">
+                            <h3 class="item-title"><a href="#">Indian Samosa .........................₹99</a></h3>
+                            <p>Roasted langoustine, consommé</p>
+                         <input type="checkbox" id="c9" class="check_1" name="ckb"  onclick="check()" value=99>
+
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 ">
+                         <img src="images/asset 13_1.jpg" alt="" class="menu_img img-fluid mb-10" onclick="">
+                    </div>
+                    <div class="col-8">
+                        <div class="menu_item mt-4">
+                            <h3 class="item-title"><a href="#">Pumpkin Soup .........................₹99</a></h3>
+                            <p>Roasted langoustine, consommé</p>
+                         <input type="checkbox" id="c10" class="check_1" name="ckb"  onclick="check()" value=99>
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><span><a href="#">(5k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+    <section class="total_sec">
+        <div class="container">
+            <div class="row bill flex py-2">
+                <div class="total col-lg-2 col-md-6 col-sm-12">
+                    <label for="amount">Total :</label><br>
+                    <input type="textbox" name="" value=" " onclick="" id="amount" readonly>
+                </div>
+                <div class="promo col-lg-2 col-md-6 col-sm-12">
+                    <label for="pro_code">Promo Code :</label><br>
+                    <input type="textbox" name="" value=" " id="promocode" onclick="" class="promo_code">
+                </div>
+                 <div class="Tax col-lg-2 col-md-6 col-sm-12">
+                    <label for="pro_code">Tax :</label><br>
+                    <input type="textbox" name="" value=" " onclick="" id="tax"  readonly>
+                </div>
+                <div class="Tax col-lg-2 col-md-6 col-sm-12">
+                    <label for="pro_code">Total Discount :</label><br>
+                    <input type="textbox" name="" value="0" onclick="" id="discount"  readonly>
+                </div>
+                <div class="total_amount col-lg-2 col-md-6  col-sm-12">
+                    <label for="pro_code">Total Amount :</label><br>
+                    <input type="textbox" onclick="" value="0" name="" id="total_amount" class=" ">
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12"><br>
+                <input type="submit" value="Check Out" onclick="offer()" class="btn_total_price">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
